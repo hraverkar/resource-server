@@ -17,8 +17,8 @@ app.use(express.json({
 }));
 app.use(cors());
 
-const sequelize = new Sequelize(Config.database, Config.user, Config.password, {
-  host: Config.server, dialect: Config.dialect
+const sequelize = new Sequelize("covidresources", "sa", "Admin12345!", {
+  host: "Harshal", dialect: "mssql"
 });
 
 sequelize
